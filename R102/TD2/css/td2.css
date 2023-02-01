@@ -1,7 +1,0 @@
-li + li + li + li em {
-    background-color: red;
-}
-
-body > ul > li + li em {
-    background-color: cyan;
-}
