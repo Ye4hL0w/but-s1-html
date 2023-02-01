@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="../css/td.css" />
+        <link rel="stylesheet" type="text/css" href="css/td2.css" />
+        <title>R102/TD2</title>
+    </head>
+    <body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="../TD1/index.html">TD1</a>
+                    <ul class="sous_menu">
+                        <li><a href="../TD1/index.html#Premier_exemple">Premier exemple</a></li>
+                        <li><a href="../TD1/index.html#Les_balises_de_texte">Les balises de texte</a></li>
+                        <li><a href="../TD1/index.html#Insertion_dune_image">Insertion d'une image</a></li>
+                        <li><a href="../TD1/index.html#Lattribut_src">L'attribut src</a></li>
+                        <li><a href="../TD1/index.html#Créer_des_liens">Créer des liens</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../TD2/index.html">TD2</a>
+                    <ul class="sous_menu">
+                        <li><a href="../TD2/index.html#Un_premier_exemple">Un premier exemple</a></li>
+                        <li><a href="../TD2/index.html#CSS">CSS : « Feuilles de styles en cascade »</a></li>
+                        <li><a href="../TD2/index.html#Combiner_des_sélecteurs">Combiner des sélecteurs</a></li>
+                        <li><a href="../TD2/index.html#Les_sélecteurs_dattributs">Les sélecteurs d'attributs</a></li>
+                        <li><a href="../TD2/index.html#Les_pseudo_classes_et_pseudo_éléments">Les pseudo-classes et pseudo-éléments</a></li>
+                        <li><a href="../TD2/index.html#Règles_de_priorité">Règles de priorité</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../TD3/index.html">TD3</a>
+                    <ul class="sous_menu">
+                        <li><a href="../TD3/index.html#Principes_de_base_dun_traitement_de_texte">Principes de base d'un traitement de texte</a></li>
+                        <li><a href="../TD3/index.html#Marges_et_bordures">Marges et bordures</a></li>
+                        <li><a href="../TD3/index.html#Changer_de_type_de_boîte">Changer de type de boîte</a></li>
+                        <li><a href="../TD3/index.html#Couches_successives">Couches successives</a></li>
+                        <li><a href="../TD3/index.html#fusion">La fusion des marges</a></li>
+                    </ul>
+                </li>
+                <li><a href="../a_propos.html">A Propos</a></li>
+            </ul>
+        </nav>
+
+        <h1>TD 2 - CSS3 : Et la couleur fut&nbsp;!</h1>
+    </header>
+    <main>
+        <h2>Fonctionnement de CSS</h2>
+        <h3 id="Un_premier_exemple">2.2 Un premier exemple</h3>
+        
+        <p><b>1. À quoi correspond rgb(120, 56, 13) en hexadécimal&nbsp;?</b></p>
+
+        <p id="marron">rgb(120, 56, 13) correspond à la couleur marron.</p>
+
+        <p><b>2. Combien de couleurs chacune de ces trois méthodes (rgb, hexa ou nom de couleur) vous permettent d'obtenir&nbsp;?</b></p>
+
+        <p>Les méthodes rgb er hexa proposent 16 777 216 couleurs différentes et le nom de couleurpropose 140 couleurs.</p>
+
+        <p><b>3. Comparez en quelques lignes ces méthodes (avantages/inconvénients).</b></p>
+
+        <p>La méthode rgb et hexa proposent le même nombres de couleurs car la méthode hexa est juste une autre  forme d'écriture 
+            de la méthode rgb et elles proposent toutes les deux énorméments de couleurs 
+            différentes. Tandis que la méthode par nom est limitée mais bien plus pratique car tout le monde connais les noms des 
+            couleurs de base mais pas forcément leurs codes couleurs.</p>
+
+        <h3 id="CSS">2.3 CSS : « Feuilles de styles en cascade »</h3>
+        <h4>2.3.b La notion d'héritage</h4>
+        <ul>
+        <li><p><b>1. Combien cet arbre a-t-il de nœuds de type ELEMENT ? De type TEXT ?</b></p></li>
+
+        <li>Type ELEMENT : 16</li>
+        <li>Type TEXT : 13</li>
+
+        <li><p><b>2. Écrire le code HTML correspondant à ce DOM.</b></p></li> 
+        </ul>
+        <pre>
+            <code>
+                &#x3C;body&#x3E;
+                &#x3C;header&#x3E;
+                &#x3C;h1&#x3E;Les papous&#x3C;/h1&#x3E;
+                &#x3C;/header&#x3E;
+                &#x3C;main&#x3E;
+                &#x3C;section&#x3E;
+                    &#x3C;h2&#x3E;D&#xE9;finition&#x3C;/h2&#x3E;
+                    &#x3C;p&#x3E;Les &#x3C;em&#x3E;papous&#x3C;/em&#x3E; sont les habitants de la Papouasie.&#x3C;/p&#x3E;
+                &#x3C;/section&#x3E;
+                &#x3C;section&#x3E;
+                    &#x3C;h2&#x3E;Classification&#x3C;/h2&#x3E;
+                    &#x3C;ul&#x3E;
+                    &#x3C;li&#x3E;Les papous papa.&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;Les papous pas papa.&#x3C;/li&#x3E;
+                    &#x3C;/ul&#x3E;
+                &#x3C;/section&#x3E;
+                &#x3C;/main&#x3E;
+                &#x3C;footer&#x3E;Site r&#xE9;alis&#xE9; par &#x3C;i&#x3E;C.Levi-Strauss&#x3C;/i&#x3E; en partenariat avec &#x3C;i&#x3E;A.Franquin&#x3C;/i&#x3E;.&#x3C;/footer&#x3E;
+            &#x3C;/body&#x3E;
+            </code>
+        </pre>
+
+        <h2>5 Sélecteurs avancés</h2>
+        <h3 id="Combiner_des_sélecteurs">5.1 Combiner des sélecteurs</h3>
+
+        <h5>Préparatifs pour l'hiver</h5>
+        <ul>
+            <li>Prévoir :
+            <ul>
+                <li>du <em>pain</em></li>
+                <li>du <em>chocolat</em></li>
+                <li>des <em>oranges</em></li>
+                <li>quelques <em>châtaignes</em></li>
+            </ul>
+            </li>
+            <li>une bonne <em>couverture</em></li>
+        </ul>
+        
+        <pre>
+            <code>
+                li + li + li + li em {
+                    background-color: red;
+                }
+        
+                body &#x3E; ul &#x3E; li + li em {
+                    background-color: cyan;
+                }
+            </code>
+        </pre>
+
+        <h3 id="Les_sélecteurs_dattributs">5.2 Les sélecteurs d'attributs</h3>
+
+        <p> Fiche CSS pour changer la couleur dans l'ordre d'une <b>adresse mail</b>, d'un <b>lien externe</b> et <b>interne</b> :</p>
+        <pre>
+            <code>
+                a[href^=&#x22;mailto:&#x22; i] {
+                    color: blue;
+                }
+
+                a[href^=&#x22;http&#x22; i] {
+                    color: red;
+                }
+
+                a[href$=&#x22;.html&#x22; i] {
+                    color: yellow;
+                }
+        </code>
+        </pre>
+
+        <h3 id="Les_pseudo_classes_et_pseudo_éléments">5.3 Les pseudo-classes et pseudo-éléments</h3>
+        <h4>5.3.a Pseudo-classes</h4>
+
+        <p><b>1. Changez la couleur de vos titres lorsqu'ils sont survolés avec la souris.</b></p>
+        <p><b>2. Quelle est la différence entre p:hover et p  :hover ?</b></p>
+        <p>Dans ce cas, p est espacé de ":". Les propriétés seront appliquées sur les éléments dont le parent direct ou indirect est "p".</p>
+        
+        <h2 id="Règles_de_priorité">6 Règles de priorité</h2>
+
+        <p><b>1. Quelle sera la couleur des différents éléments de cette page ? Essayez de le trouver par vous-même avant de tester ce code pour vérifier.</b></p>
+        <p>Le titre h1 est en rouge, le paragraphe p est en rose sauf ce qui est en itallic qui est en marron et le paragraphe de class important est en bleu.</p>
+        <p><b>2. Pour chaque élément, identifiez les règles qui peuvent potentiellement le concerner et classez-les de la plus forte à la plus faible, en justifiant 
+        (calculez la spécificité de chaque sélecteur CSS pour justifier).</b></p>
+        <ul>
+            <li> L'élément "Ceci est un paragraphe", a une priorité de (1,1,2), 1 identifiant, 1 classe et 2 balises.</li>
+            <li> L'élément "Et que dire de celui-ci ?", a une priorité de (0,1,2), 1 classe et 2 balises. </li>
+            <li> Les éléments "Ma page" et "assez remarquable", <b>h1</b> et <b>em</b> ne sont pas définie et appartiennent donc à <b>*</b> de priorité (0,0,0). </li>
+        </ul>
+        
+    </main>
+    </body>
+    </html>

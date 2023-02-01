@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    width: 80%;
+    min-width: 500px;
+    max-width: 1000px;
+}
+
+nav {
+    list-style-type: none;
+    border-top: 4px solid #00008b;
+  }
+
+.menu {
+    list-style-type: none;
+    margin-top: -1%;
+    margin-left: 2%;
+    padding: 0;
+    text-align: left;
+}
+
+.menu li {
+    float: left;
+    margin-right: -0.7%;
+}
+
+.menu li a:link, .menu li a:visited {
+    display: inline-block;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 11px;
+    border-radius: 0 0px 18px 5px;
+    background-color: #6495ed;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.menu .sous_menu{
+    list-style-type: none;
+    display: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    margin-right: 0px;
+}
+
+.menu .sous_menu li {
+    float: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 5px;
+}
+
+.menu .sous_menu{
+    background-color: #6495ed;
+    padding: 5px;
+    border-radius:0 5px 12px 12px;
+}
+
+.menu .sous_menu li a:link, .menu li a:visited {
+    display: block;
+    padding: 6px 10px;
+    border-radius: 0 0px 0px 0px;
+    text-align: left;
+}
+  
+.menu .sous_menu li a:hover{
+    width: fit-content;
+    background-color: #00008b;
+    border-radius: 5px;
+    color: white;
+}
+
+.menu li:hover .sous_menu{
+    display: block;
+}
+
+.menu li a:hover {
+    border-radius: 0;
+}
+
+.menu >li:last-child a{
+    background-color: #ffa500;
+}
+
+.menu >li:last-child +  .sous_menu >li >a {
+    background-color: #ffa500;
+}
+
+.menu >li:last-child > .sous_menu{
+    background-color: #ffa500;
+}
+
+h1 {
+    border-color: #242423;
+    border-style:solid;
+    text-align: center; 
+    background-color: #333533;
+    width: calc(20px + 80%);
+    margin-left:  auto;
+    margin-right: auto;
+    border-width: 5px;
+    margin-top: 5%;
+}
+
+h2 {
+    margin: 2% 15% 2% 15%;
+    background-color: #333533;
+    border-style:solid;
+    text-align: center;
+    border-color: #242423;
+    border-width: 4px;
+    margin-top: 4%;
+    
+}
+
+h3 {
+    margin: 2% 10% 2% 10%;
+    background-color: #E8EDDF;
+    border-style:solid;
+    text-align: center;
+    border-color: #CFDBD5;
+    border-width: 3px;
+    
+}
+
+h4 {
+    margin: 2% 5% 2% 5%;
+    background-color: #F0F0F0;
+    border-style:solid;
+    text-align: center;
+    border-color: #CACACA;
+    border-width: 2px;
+}
+
+p {
+    color: black;
+    background-color: #E8EDDF; 
+    margin: 2%;               
+}
+li {
+    margin: 1%;
+}
+
+#marron {
+    color:rgb(120, 56, 13);
+}
+
+h1:hover {
+    color: blueviolet;
+}
+
+h2:hover {
+    color: turquoise;
+}
+
+cite::before {
+    content: " « ";
+    color: orange;
+}
+
+cite::after {
+    content: " » ";
+    color: orange;
+}
+
+cite {
+    background-color: aquamarine;
+}
+
+.aproposimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border-style:solid;
+    border-color: #1d351d;
+    box-shadow: 10px 10px 20px 1px #0f1c12  
+}
+
+/* TD3 */
+/* 2.1 Modes de positionnement */
+.info{
+    position: relative;
+}
+
+.info .infobulle{
+    visibility: hidden;
+    background-color: #adc6a6;
+    color: black;
+    padding: 8px;
+    border-radius: 12px;
+    position: absolute;
+    margin-left: 29%;
+    margin-top: 1%;
+    box-shadow: 10px 10px 10px #607767;
+}
+
+.info:hover .infobulle{
+    visibility: visible;
+}
+
+/* 2.2 Éléments flottants */
+#imagefloat{
+    float: right;
+}
+
+/* Exercice récapitulatif */
+
