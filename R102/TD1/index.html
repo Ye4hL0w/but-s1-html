@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+        <html lang='fr'>
+        <head>
+            <meta charset = 'utf-8'/>
+            <link rel="stylesheet" href="../css/td.css" type="text/css" />
+            <title>R102/TD1</title>
+        </head>
+        <body>
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="../TD1/index.html">TD1</a>
+                        <ul class="sous_menu">
+                            <li><a href="../TD1/index.html#Premier_exemple">Premier exemple</a></li>
+                            <li><a href="../TD1/index.html#Les_balises_de_texte">Les balises de texte</a></li>
+                            <li><a href="../TD1/index.html#Insertion_dune_image">Insertion d'une image</a></li>
+                            <li><a href="../TD1/index.html#Lattribut_src">L'attribut src</a></li>
+                            <li><a href="../TD1/index.html#Créer_des_liens">Créer des liens</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../TD2/index.html">TD2</a>
+                        <ul class="sous_menu">
+                            <li><a href="../TD2/index.html#Un_premier_exemple">Un premier exemple</a></li>
+                            <li><a href="../TD2/index.html#CSS">CSS : « Feuilles de styles en cascade »</a></li>
+                            <li><a href="../TD2/index.html#Combiner_des_sélecteurs">Combiner des sélecteurs</a></li>
+                            <li><a href="../TD2/index.html#Les_sélecteurs_dattributs">Les sélecteurs d'attributs</a></li>
+                            <li><a href="../TD2/index.html#Les_pseudo_classes_et_pseudo_éléments">Les pseudo-classes et pseudo-éléments</a></li>
+                            <li><a href="../TD2/index.html#Règles_de_priorité">Règles de priorité</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../TD3/index.html">TD3</a>
+                        <ul class="sous_menu">
+                            <li><a href="../TD3/index.html#Principes_de_base_dun_traitement_de_texte">Principes de base d'un traitement de texte</a></li>
+                            <li><a href="../TD3/index.html#Marges_et_bordures">Marges et bordures</a></li>
+                            <li><a href="../TD3/index.html#Changer_de_type_de_boîte">Changer de type de boîte</a></li>
+                            <li><a href="../TD3/index.html#Couches_successives">Couches successives</a></li>
+                            <li><a href="../TD3/index.html#fusion">La fusion des marges</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../a_propos.html">A Propos</a></li>
+                </ul>
+            </nav>
+
+            <h1>TD 1 - À la découverte de HTML</h1>
+        </header>
+        <main>
+            <h2>Au travail !</h2>
+            <h3 id="Premier_exemple">3.2 Premier exemple</h3>
+
+            <p>Voici un 
+            
+            premier 
+            
+            paragraphe.</p>
+            <p>En voici un autre.</p>
+            <h2>5 Le corps du document</h2>
+            <h3 id="Les_balises_de_texte">5.2 Les balises de texte</h3>
+            <ul>
+                <li><blockquote><p><b>URL</b> signifie <em>Uniform Resource Locator</em> (ou, en français, « localisateur uniforme de ressource »). Une <b>URL</b> est simplement 
+                    l'adresse d'une ressource donnée, unique sur le Web. En théorie, chaque <b>URL</b> valide pointe vers une ressource unique. Ces ressources 
+                    peuvent être des pages HTML, des documents CSS, des images, etc.</p><p><cite>Jerem</cite></p></blockquote></li>
+
+                <li><q>Un <b>URI</b>, de l'anglais <em>Uniform Resource Identifier</em>, soit littéralement identifiant uniforme de ressource, est une courte chaîne de caractères identifiant une 
+                    ressource sur un réseau physique ou abstraite, et dont la syntaxe respecte une norme d'Internet mise en place pour le World Wide Web</q>
+                    <cite>Wikipedia</cite></li>
+            </ul>
+
+            <h3 id="Insertion_dune_image">5.3 Insertion d'une image</h3>
+
+            <p><b>1. Qu'est-ce qu'un format d'image matriciel&nbsp;? Vectoriel&nbsp;? Avec perte/sans perte&nbsp;?</b></p>
+
+            <p>Une <b>image matricielle</b> est une image numérique formée d'une multitude de points de couleur (pixels), et représentée sur une grille dotée de deux axes, X et Y. La définition 
+                (ou la précision) d'une <b>image matricielle</b> dépend ainsi du nombre de pixels qui la composent.</p>
+            <p>Les <b>images vectorielles</b> sont constituées de tracés/formules mathématiques.</p>
+            <p>Ce format d'image est principalement utilisé pour les images animées. Le format GIF est un format compressé mais sans <b>perte de qualité</b>. Ceci pour une raison simple, c'est qu'elle 
+                ne peut contenir plus de 256 couleurs dans chaque calque d'une même image, celle-ci supportant la superposition de calques.
+                La compression <b>avec perte</b> est la méthode de codage qui utilise des estimations imprécises pour représenter le contenu. La compression <b>sans perte</b> est un groupe d'algorithmes de 
+                compression de données qui permet de reconstruire avec précision les données d'origine à partir des données compressées. Images, audio et vidéo.</p>
+                
+            <p><b>2. Quelle sont les différences entre les formats PNG, GIF, JPG et SVG&nbsp;?</b></p>
+
+            <p>La différence entre les formats <b>PNG, GIF, JPG et SVG</b>est la <em>méthode de compression</em>.</p>
+                
+           <p><b>3. Pour quel usage est conseillé chaque format&nbsp;?</b></p>
+            <ul>
+                <li>JPG : le format le plus commun, idéal pour les photos et les visuels très riches en couleurs.</li>
+                <li>PNG-8 : le format recommandé pour les graphiques simples, les icônes et les logos.</li>
+                <li>GIF : pour toutes les images animées qui ponctuent vos messages.</li>
+                <li>PNG-24 : idéal si vous cherchez un effet de transparence ou pour les images complexes.</li>
+                <li>SVG : un format recommandé pour les images vectorisées, vous pouvez ainsi en changer le format sans perdre en qualité.</li>
+            </ul>
+                
+            <p><b>4. De nouveaux formats d'images ont vu le jour récemment : JPEG2000, WebP, APNG, JPEG-XR, BPG, FLIF, JPEGXL, AVIF... Quels sont leurs points forts/points faibles&nbsp;?</b></p>
+
+            <blockquote><p>Bien souvent, quand on souhaite mettre des images sur son site internet, on fait appel aux formats classiques. Que ce soit <b>JPEG</b> pour des <em>images standard</em> ou bien <b>PNG</b> 
+                pour des <em>images gérant la transparence</em>. Or ces formats sont un peu vieillots : JPEG date de 1991 et PNG de 1996.
+                La technologie évolue, et les formats d’images avec : focus sur les nouveaux formats d’images web.
+                Aujourd’hui, les moteurs de recherche tels que Google privilégient les sites qui chargent rapidement. En d’autres termes plus votre site aura un temps de chargement rapide, plus 
+                il aura de chance de se classer devant ses concurrents dans les résultats de recherches.
+                Il faut également savoir que les images constituent une grande part du poids d’une page web (~65%).
+                C’est donc pourquoi il est intéressant de se pencher sur ces nouveaux formats d’images : car ils sont conçus pour le web d’aujourd’hui. En effet, ils permettent une plus grande compression 
+                des images et améliorent donc le temps de chargement des sites internet.
+                De plus, force est de constater que plus votre site internet chargera rapidement, plus l’expérience utilisateur sera bonne. En effet, on estime que les sites qui mettent plus de 3 secondes 
+                à charger perdent près de la moitié de leurs utilisateurs.</p>
+            
+            <p><b>Les bénéfices de ces nouveaux formats d’images sont donc multiples :</b></p>
+            <ol>
+                <li>Meilleur référencement,</li>
+                <li>Amélioration de l’expérience utilisateur,</li>
+                <li>Site web plus performant.</li>
+            </ol>
+
+            <b>JPEG 2000 :</b>
+            <ul>
+                <li>Créée par le groupe de travail Joint Photographic Experts Group.</li>
+                <li>Il prend en charge les formats alpha (transparence), RVB / CMJN, espace colorimétrique 32 bits, avec ou sans perte.</li>
+                <li>Son gain de compression moyen est de 10% par rapport à l’image originale.</li>
+            </ul>
+
+            <b>JPEG XR :</b>
+            <ul>
+                <li>Crée par Microsoft.</li>
+                <li>Il prend en charge les formats alpha, RVB / CMJN, sans perte ou sans perte, décodage progressif, espacement des couleurs 32 bits.</li>
+                <li>Son gain de compression moyen est de 15% par rapport à l’image originale.</li> 
+            </ul>
+
+            <b>WebP :</b>
+            <ul>
+                <li>Créée par Google</li>
+                <li>Il prend en charge l’alpha, sans perte ou sans perte.</li>
+                <li>Son gain de compression moyen est de 40% par rapport à l’image originale.</li>
+            </ul>
+
+            <p><cite>digitom.fr</cite></p></blockquote>            
+            
+            <div id="imagefloat">
+                <h3>5.3 Insertion d'une image</h3>
+                <h4 id="Lattribut_src">5.3.a L'attribut src</h4>
+
+                <img src = 'img/wise-pug-thinking-about-the-world_925x.jpg' width="500" height="400" alt="Petit chien mignon">
+                <p>L'image du petit chien mignon est flottante.</p>
+            </div>
+
+            <h3 id="Créer_des_liens">5.4 Créer des liens</h3>
+            <h4>5.4.a Principe</h4>
+
+            <a href='../a_propos.html' target='_self'>A propos de moi !</a>
+
+            <h4>5.4.b L'attribut target</h4>
+
+            <p><b>1. En général, vaut-il mieux utiliser "_blank" ou "_self" comme valeur de target (et pourquoi)&nbsp;?</b></p>
+            <p>Il est conseillé d'utiliser <q>_self</q> plustot que <q>_blank</q> car c'est plus pratique pour l'utilisateur du site.</p>
+            <p><b>2. Y a-t-il des exceptions&nbsp;? Lesquelles et pourquoi&nbsp;?</b></p>
+            <p>Oui, si il y a une action en cour dans la page, il vaut mieux en ouvrir une autre.</p>
+        </main>
+        <footer></footer>
+        </body>
+        </html>
+        
